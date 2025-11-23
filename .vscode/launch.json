@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "FastAPI (uvicorn)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["frank_tools.api.app:app", "--reload"],
+      "jinja": true
+    },
+    {
+      "name": "Pytest - all",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": [],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Pytest - single file",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["tests/download/test_drive.py"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    },
+    {
+      "name": "Pytest - by keyword",
+      "type": "python",
+      "request": "launch",
+      "module": "pytest",
+      "args": ["-k", "sample_test"],
+      "console": "integratedTerminal",
+      "justMyCode": false
+    }
+  ]
+}
